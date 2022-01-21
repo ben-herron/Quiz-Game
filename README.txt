@@ -1,6 +1,4 @@
 Ben Herron
-101114561
-COMP2406-A5
 
 In order to run my program you must first "npm install" within the directory you saved all of my files contents within. This should install: 
 "connect-mongodb-session": "^2.2.0",
