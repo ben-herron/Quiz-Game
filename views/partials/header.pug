@@ -1,0 +1,17 @@
+div#header
+    a(href="/") Home
+    |  |
+    a(href="/quiz") New Quiz
+    |  |
+    a(href="/users") Users
+div#login
+    h3 Log In
+    label Username:
+        input#uName
+        br
+    lable Password:
+        input#pName
+    br
+    button(onclick='loginSub()')#loginButton Submit
+    br
+    script(src="/js/login.js")

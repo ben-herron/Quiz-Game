@@ -1,0 +1,10 @@
+html
+    head
+        script(src="/js/profile.js")
+        title Selected User
+body#uBody
+    include ../partials/header
+    p
+        text= "Completed Quizzes: "+ user.total_quizzes
+    p
+        text= "Average Score: "+ average.avg

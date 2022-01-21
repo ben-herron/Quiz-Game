@@ -1,0 +1,18 @@
+html
+    head
+        script(src="/js/profile.js")
+        title Selected User
+body#uBody
+    include ../partials/loggedHeader
+    p
+        text= "Completed Quizzes: "+ user.total_quizzes
+    p
+        text= "Average Score: "+ average.avg
+    p
+        text= "Current Privacy: "+ user.privacy
+    p Privacy:
+        select#privacySelect
+            option true
+            option(selected=true) false
+    button(onclick='savePrivacy()')#saveButton Save
+    button(onclick='logOut()')#logoutButton Log Out

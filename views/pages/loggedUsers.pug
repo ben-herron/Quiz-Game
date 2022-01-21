@@ -1,0 +1,9 @@
+html
+    head
+        title Users
+body#uBody
+    include ../partials/loggedHeader
+    p#users Users:
+        each pUser in pUsers
+            a(href="/users/" + pUser._id) #{pUser.username}
+            br
